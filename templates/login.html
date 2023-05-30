@@ -1,18 +1,30 @@
-{% extends "base.html" %}
+{% extends "baselogin.html" %}
+
+{% block titulo %}Acceso al Sistema{% endblock %}
 
 {% block contenido %}
-<br>
-<br>
-<h1>login</h1>
-<div class="container">
-    <div class="row">
-        <div class="class col">
-            <h1>login</h1>
-        </div>
-        <div class="class col">
 
+
+<div class="container">
+    <div class="row vh-100 align-items-center justify-content-center">
+        <div class="col-sm-8 col-md-6 col-lg-4 bg-white rounded p-4 shadow">
+            <div class="row justify-content-center mb-4">
+                <form method="post">
+                    <div class="mb-4">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="password" required>
+                    </div>
+                    <div class="mb-4">
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                    </div>
+                </form>
+                <p class="mb-0 text-center">No esta Registrado <a href="{{url_for('registro')}}" class="text-decoration-none">Registrate</a></p>
+            </div>
         </div>
     </div>
-
 </div>
 {% endblock %}

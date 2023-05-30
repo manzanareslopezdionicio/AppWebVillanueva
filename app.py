@@ -4,7 +4,7 @@ from flask import render_template
 app = Flask(__name__)
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('login.html')
 
 @app.route('/login')
 def login():
@@ -15,7 +15,7 @@ def index():
     return render_template('index.html')
 
 @app.route('/registro')
-def registroc():
+def registro():
     return render_template('registro.html')
 
 if __name__ == '__main__':
