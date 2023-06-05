@@ -4,7 +4,7 @@ from flask import render_template
 app = Flask(__name__)
 @app.route('/')
 def home():
-    return render_template('login.html')
+    return render_template('index.html')
 
 @app.route('/login')
 def login():
@@ -17,6 +17,14 @@ def index():
 @app.route('/registro')
 def registro():
     return render_template('registro.html')
+
+@app.route("/orden")
+def orden():
+    return render_template('orden.html')
+
+@app.route("/cliente")
+def cliente():
+    return render_template('cliente.html')
 
 if __name__ == '__main__':
     app.run(debug=True, port=4000)
