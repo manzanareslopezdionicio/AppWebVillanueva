@@ -4,5 +4,68 @@
 {% block contenido %}
 <br>
 <br>
-<h1>Estamos Trabajando Vista Orden...</h1>
+<br>
+<div class="card">
+   <div class="card-header text-center mb-4">
+        <h5>Registro de orden</h5>
+   </div>
+   <form action="" class="row g-3">
+    <div class="mb-3 row">
+        <label for="cedula" class="col-sm-2 col-form-label">Cédula</label>
+        <div class="col-sm-6">
+          <input type="cedula" class="form-control" id="cedula">
+        </div>
+        <div class="col-md-4 mb-4">
+            <button type="" class="btn btn-outline-success">Buscar</button>
+        </div>
+
+        <div class="col-md-3">
+            <label for="form-control">Nombres</label>
+            <input type="text" class="form-control" id="cedula" placeholder="Ej. Jonh ">
+        </div>
+        <div class="col-md-3">
+            <label for="form-control">Apellidos</label>
+            <input type="text" class="form-control" id="cedula" placeholder="Ej. Marin ">
+        </div>
+        <div class="col-md-6">
+            <label>Orden:</label>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="orden" value="" id="bordado" checked>
+                <label class="form-check-label" for="orden">
+                  Bordado
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="orden" id="sublimar">
+                <label class="form-check-label" for="orden">
+                  Sublimación
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="orden" id="impresion">
+                <label class="form-check-label" for="orden">
+                  Impresión Dígital
+                </label>
+              </div>
+              <div class="mb-4 form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="orden" id="otros">
+                <label class="form-check-label" for="orden">
+                  otros
+                </label>
+              </div>   
+        </div>
+        <div class="col-md-3">
+            <label for="form-label">Nombre producto</label>
+            <input class="form-control" type="text" id="nproducto" name="nproducto" placeholder="Ej. producto">
+        </div>
+        <div class="col-md-3 mb-4">
+            <label for="form-label">Cantidad</label>
+            <input class="form-control" type="text" id="cantidadP" name="cantidadP" placeholder="Ej. 10">
+        </div>
+        <div class="text-center">
+            <button class="btn btn-outline-primary rounded-pill" type="submit">Guardar...</button>
+        </div>
+   </form>
+</div>
+
 {% endblock %}
