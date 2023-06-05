@@ -10,14 +10,18 @@
             <div >
                 <h1 class="h4 mb-3 text-center fw-normal">Registro de usuario</h1>
             </div>
-            <form action=".">
+            <form action="." method="">
                 <div class="mb-2 form-floating">
-                    <input type="text" class="form-control" id="cedula" placeholder="cedula" required>
-                    <label for="cedula" class="form-label">Cedula</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                    <label for="email" class="form-label">Correo electrónico</label>
                 </div>
                 <div class="mb-2 form-floating">
+                    <input type="text" class="form-control" id="cedula" placeholder="cedula" required>
+                    <label for="cedula" class="form-label">Cédula</label>
+                </div>
+                <div class=" mb-2 form-floating">
                     <input type="text" class="form-control" id="nombre" placeholder="nombre" required>
-                    <label for="nombre" class="form-label">Nombre</label>
+                    <label for="nombre" class="form-label">Nombres</label>
                 </div>
                 <div class="mb-2 form-floating">
                     <input type="text" class="form-control" id="apellidos" placeholder="Apellidos" required>
@@ -25,12 +29,9 @@
                 </div>
                 <div class="mb-2 form-floating">
                     <input type="text" class="form-control" id="direccion" placeholder="direccion" required>
-                    <label for="direccion" class="form-label">Direccion</label>
+                    <label for="direccion" class="form-label">Dirección</label>
                 </div>      
-                <div class="mb-4 form-floating">
-                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
-                    <label for="email" class="form-label">Correo electronico</label>
-                </div>
+                
                 <div class="mb-4">
                     <label for="cargo" class="form-label">Cargo</label>
                     <select class="form-select" id="" required>
@@ -43,7 +44,7 @@
                     <p class="formulario_input-error">Seleccione su cargo correcto...</p>
                   </div>
                 <div class="mb-2">
-                    <button type="submit" class="btn btn-outline-primary w-100" >Guardar</button>
+                    <button type="submit" class="btn btn-outline-primary w-100">Guardar</button>
                 </div>
             </form>
         </div>
