@@ -5,30 +5,31 @@
 <br>
 <br>
 <br>
-<div class="card">
+<div class="card col-12">
    <div class="card-header text-center mb-4">
         <h5>Registro de orden</h5>
    </div>
-   <form action="" class="row g-3">
+   <form action="" class="row g-2">
     <div class="mb-3 row">
         <label for="cedula" class="col-sm-2 col-form-label">Cédula</label>
-        <div class="col-sm-6">
+        <div class="col-sm-4">
           <input type="cedula" class="form-control" id="cedula">
         </div>
-        <div class="col-md-4 mb-4">
+        <div class="col-sm-4 mb-4">
             <button type="" class="btn btn-outline-success">Buscar</button>
         </div>
-
-        <div class="col-md-3">
+        <div class="col-md-6">
             <label for="form-control">Nombres</label>
             <input type="text" class="form-control" id="cedula" placeholder="Ej. Jonh ">
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6 mb-4">
             <label for="form-control">Apellidos</label>
             <input type="text" class="form-control" id="cedula" placeholder="Ej. Marin ">
         </div>
-        <div class="col-md-6">
-            <label>Orden:</label>
+        <div class="col-md-10">
+            <p>Orden:</p>
+        </div>
+        <div class="col-md-8">
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="orden" value="" id="bordado" checked>
                 <label class="form-check-label" for="orden">
@@ -54,13 +55,50 @@
                 </label>
               </div>   
         </div>
-        <div class="col-md-3">
+        <div class="col-sm-4 mb-4">
+            <button type="" class="btn btn-success">AGREGAR...</button>
+        </div>
+        <div class="col-md-4">
             <label for="form-label">Nombre producto</label>
             <input class="form-control" type="text" id="nproducto" name="nproducto" placeholder="Ej. producto">
         </div>
-        <div class="col-md-3 mb-4">
+        <div class="col-md-2">
+            <button type="" class="btn btn-outline-success">Buscar</button>
+        </div>
+        <div class="col-auto">
             <label for="form-label">Cantidad</label>
             <input class="form-control" type="text" id="cantidadP" name="cantidadP" placeholder="Ej. 10">
+        </div>
+        <div class="col-auto mb-4">
+            <label for="form-control">Precio</label>
+            <input type="text" class="form-control" id="precio" name="precio" placeholder="Ej. 25.75">
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Codigo</th>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>SUB-TOTAL</th>
+                        <th>Acciones</th>
+                    </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr class="table-primary" >
+                            <td scope="row">Item</td>
+                            <td>Item</td>
+                            <td>Item</td>
+                            <td>Item</td>
+                            <td>Item</td>
+                            <td>
+                                <a href="#" class="btn btn-primary" role="button">Editar</a>
+                                <a href="#" class="btn btn-danger" role="button">Eliminar</a>
+                            </td>
+                        </tr>
+                    </tbody>
+            </table>
         </div>
         <div class="text-center">
             <button class="btn btn-outline-primary rounded-pill" type="submit">Guardar...</button>
