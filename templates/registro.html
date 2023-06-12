@@ -10,31 +10,31 @@
             <div >
                 <h1 class="h4 mb-3 text-center fw-normal">Registro de usuario</h1>
             </div>
-            <form action="." method="">
+            <form action="/registro" method="post">
                 <div class="mb-2 form-floating">
-                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email" required>
                     <label for="email" class="form-label">Correo electrónico</label>
                 </div>
                 <div class="mb-2 form-floating">
-                    <input type="text" class="form-control" id="cedula" placeholder="cedula" required>
+                    <input type="text" class="form-control" id="cedula" placeholder="cedula" name="cedula" required>
                     <label for="cedula" class="form-label">Cédula</label>
                 </div>
                 <div class=" mb-2 form-floating">
-                    <input type="text" class="form-control" id="nombre" placeholder="nombre" required>
+                    <input type="text" class="form-control" id="nombre" placeholder="nombre" name="nombre" required>
                     <label for="nombre" class="form-label">Nombres</label>
                 </div>
                 <div class="mb-2 form-floating">
-                    <input type="text" class="form-control" id="apellidos" placeholder="Apellidos" required>
+                    <input type="text" class="form-control" id="apellidos" placeholder="Apellidos" name="apellido" required>
                     <label for="apellidos" class="form-label">Apellidos</label>
                 </div>
                 <div class="mb-2 form-floating">
-                    <input type="text" class="form-control" id="direccion" placeholder="direccion" required>
+                    <input type="text" class="form-control" id="direccion" placeholder="direccion" name="direccion" required>
                     <label for="direccion" class="form-label">Dirección</label>
                 </div>      
                 
                 <div class="mb-4">
                     <label for="cargo" class="form-label">Cargo</label>
-                    <select class="form-select" id="" required>
+                    <select class="form-select" id="" name="rol" required>
                       <option Seleccione un elemento de la lista="">Elige...</option>
                       <option>Sublimación</option>
                       <option>Bordado</option>
