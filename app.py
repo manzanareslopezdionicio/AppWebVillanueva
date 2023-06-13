@@ -1,4 +1,4 @@
-from flask import Flask, redirect, url_for, request
+from flask import Flask, redirect, url_for, request, flash
 from flask import render_template
 import database as dbase
 import schema
@@ -6,6 +6,9 @@ import schema
 db = dbase.conection_db()
 
 app = Flask(__name__)
+
+app.secret_key = 'LOL'
+
 @app.route('/')
 def home():
     return render_template('index.html')
@@ -30,20 +33,26 @@ def registro():
         direccion = request.form['direccion']
         rol = request.form['rol']
 
+        #verificando si el usuario ya existe 
+        if TablaU.find_one({'email': email}):
+           flash('El usuario ya existe', 'error')
+           return render_template('registro.html')
+        
         # validando que los datos existan 
         if email and cedula and nombre and apellido and direccion and rol :
          #creando el esquema de usuario
          usuario = schema.Usuario(email,cedula,nombre,apellido,direccion,rol)
          #insertando usuario en la tabla 
+
          TablaU.insert_one(usuario.__dict__)
 
          #mensaje de confirmacion  
-         mensaje = "Usuario creado correctamente"
-
+         flash('El usuario se creo correctamen', 'success')
+         redirect(url_for('login'))
         else:
-          mensaje = "Error al crear el usuario"
-          
-        return redirect(url_for('login'))
+          flash('Todos los datos son necesarios', 'error')
+          return redirect(url_for('registro'))
+        
     
     return render_template('registro.html')
     
