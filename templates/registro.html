@@ -10,6 +10,19 @@
             <div >
                 <h1 class="h4 mb-3 text-center fw-normal">Registro de usuario</h1>
             </div>
+            <div id="alert-messages">
+                {% with messages = get_flashed_messages() %}
+                  {% if messages %}
+                    <div class="alert alert-danger p-1">
+                      <ul class="alert-list ">
+                        {% for message in messages %}
+                          <li class="list-unstyled text-center">{{ message }}</li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  {% endif %}
+                {% endwith %}
+              </div>
             <form action="/registro" method="post">
                 <div class="mb-2 form-floating">
                     <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email" required>
@@ -51,5 +64,12 @@
 
     </div>
 </div>
-
+<script>
+    setTimeout(function() {
+      var alertMessages = document.getElementById('alert-messages');
+      if (alertMessages) {
+        alertMessages.style.display = 'none';
+      }
+    }, 3000);
+  </script>
 {% endblock %}

@@ -1,0 +1,4 @@
+--crear variables de entorno 
+dotenv
+-- instalar pymongo
+--instalar certifi
