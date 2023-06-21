@@ -5,20 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block titulo %} {% endblock %}</title>
-    
-    <link rel="shortcut icon" href="{{ url_for('static', filename='img/logo.jpg') }}" type="image/jpg">  
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+    <link rel="shortcut icon" href="{{url_for('static', filename='img/logo.jpg')}}" type="image/jpg">  
     <!--Bootstrap -->
-    <link rel="stylesheet" 
-    type=text/css 
-    href="{{ url_for('static', filename='bootstrap-5.3.0/css/bootstrap.min.css') }}"> 
-    
+    <link rel="stylesheet" href="{{url_for('static', filename='bootstrap-5.3.0-dist/css/bootstrap.min.css')}}"> 
     
     <!--Data Table -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='/DataTables/DataTables-1.13.4/css/dataTables.bootstrap5.min.css')}}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='/DataTables/Buttons-2.3.6/css/buttons.bootstrap5.min.css')}}">
-    
-  </head>
+    <link rel="stylesheet" href="{{url_for('static', filename='DataTables/DataTables-1.13.4/css/dataTables.bootstrap5.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='DataTables/Buttons-2.3.6/css/buttons.bootstrap5.min.css')}}">
+   
+</head>
 </head>
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark nav-pills">
@@ -55,8 +50,8 @@
         </div>
     </div>
     <!--Bootstrap-->
-    <script src="{{ url_for('static', filename='bootstrap-5.3.0/js/bootstrap.bundle.min.js') }}"></script>
- 
+    <script src="{{ url_for('static', filename='bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js') }}"></script>
+   
     <!--Data table-->
     <script src =" {{ url_for('static', filename='DataTables/jszip/2.5.0/jszip.min.js') }}" ></script>
     <script src =" {{ url_for('static', filename='DataTables/pdfmake/0.2.7/pdfmake.min.js') }} " ></script>
