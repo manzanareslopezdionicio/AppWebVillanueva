@@ -11,13 +11,34 @@
    </div>
    <form action="" class="row g-2">
     <div class="mb-3 row">
-        <label for="cedula" class="col-sm-2 col-form-label">Cédula</label>
+        <label for="cedula" class="col-sm-2 col-form-label" >Cédula</label>
         <div class="col-sm-4">
           <input type="cedula" class="form-control" id="cedula">
         </div>
+        <!-- Button Ventana modal -->
         <div class="col-sm-4 mb-4">
-            <button type="" class="btn btn-outline-success">Buscar</button>
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Buscar</button>
         </div>
+        <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Registro de Cliente</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Estamos en contruccion
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Guardar</button> 
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Salir</button>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
         <div class="col-md-6">
             <label for="form-control">Nombres</label>
             <input type="text" class="form-control" id="cedula" placeholder="Ej. Jonh ">
@@ -105,5 +126,7 @@
         </div>
    </form>
 </div>
+
+
 
 {% endblock %}
