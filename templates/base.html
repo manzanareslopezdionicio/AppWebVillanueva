@@ -11,17 +11,14 @@
     <link rel="stylesheet" 
     type=text/css 
     href="{{ url_for('static', filename='bootstrap-5.3.0/css/bootstrap.min.css') }}"> 
-    
-    <!--Data Table -->
-    
-<link href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" rel="stylesheet"/>
-<link href="https://cdn.datatables.net/buttons/2.3.6/css/buttons.bootstrap5.min.css" rel="stylesheet"/>
 
-    <link rel="stylesheet" 
+    <!--Data Table-->
+    <link rel="stylesheet"
     href="{{ url_for('static', filename='DataTables/DataTables-1.13.4/css/dataTables.bootstrap5.min.css')}}">
     <link rel="stylesheet" 
     href="{{ url_for('static', filename='DataTables/Buttons-2.3.6/css/buttons.bootstrap5.min.css')}}">
-    
+    <link rel="stylesheet" 
+    href="https://cdn.datatables.net/responsive/2.4.1/css/responsive.dataTables.min.css">
   </head>
 </head>
 <body>
@@ -58,24 +55,14 @@
             </div>
         </div>
     </div>
-   
     <!--Bootstrap-->
     <script src="{{ url_for('static', filename='bootstrap-5.3.0/js/bootstrap.bundle.min.js') }}"></script>
- 
     <!--Data table-->
-    
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
-<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/2.3.6/js/dataTables.buttons.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.bootstrap5.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.colVis.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.html5.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.print.min.js"></script>
-
-
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" 
+    integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" 
+    crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
     <script src =" {{ url_for('static', filename='DataTables/jszip-2.5.0/jszip.min.js') }}" ></script>
     <script src =" {{ url_for('static', filename='DataTables/pdfmake-0.2.7/pdfmake.min.js') }} " ></script>
     <script src =" {{ url_for('static', filename='DataTables/pdfmake-0.2.7/vfs_fonts.js') }} " ></script>
@@ -86,9 +73,6 @@
     <script src =" {{ url_for('static', filename='DataTables/buttons/2.3.6/js/buttons.colVis.min.js') }} " ></script>
     <script src =" {{ url_for('static', filename='DataTables/buttons/2.3.6/js/buttons.html5.min.js') }} " ></script>
     <script src =" {{ url_for('static', filename='DataTables/buttons/2.3.6/js/buttons.print.min.js') }} " ></script>
-    
     <script src =" {{ url_for('static', filename='js/script.js') }}"></script>
-    
- 
 </body>
 </html>

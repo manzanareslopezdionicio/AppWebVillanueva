@@ -26,6 +26,9 @@ def orden():
 def cliente():
     return render_template('cliente.html')
 
+@app.route('/datatables')
+def datatables():
+    return render_template('datatables.html')
 
 
 if __name__ == '__main__':
