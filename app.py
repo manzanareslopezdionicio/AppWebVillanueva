@@ -18,13 +18,17 @@ def index():
 def registro():
     return render_template('registro.html')
 
-@app.route("/orden")
+@app.route('/orden')
 def orden():
     return render_template('orden.html')
 
-@app.route("/cliente")
+@app.route('/cliente')
 def cliente():
     return render_template('cliente.html')
+
+@app.route('/producto')
+def producto():
+    return render_template('producto.html')
 
 @app.route('/datatables')
 def datatables():

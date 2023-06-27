@@ -4,7 +4,11 @@
 <br>
 <br>
 <h2>Listado de Ordenes...</h2>
-<a href="{{url_for('orden')}}" id="" class="btn btn-outline-success rounded-pill" role="button">Registrar Orden</a>
+<a href="{{url_for('orden')}}" id="" 
+data-bs-toggle="tooltip" data-bs-placement="top"
+data-bs-custom-class="custom-tooltip"
+data-bs-title="Agregar orden de pedido a realizar..." 
+class="btn btn-outline-success rounded-pill" role="button"> Registrar Orden</a>
 <br>
 <br>
 <div class="table-responsive">
@@ -27,19 +31,16 @@
             <td>61</td>
             <td>2011-04-25</td>
             <td>
-                    <a href="#" class="btn btn-primary btn-sm" role="button"><i class="fa-solid fa-pencil"></i>Editar</i></a>
-                    <a href="#" class="btn btn-danger btn-sm" role="button">Eliminar</a>
-            </td>
-        </tr>
-        <tr>
-            <td>Dani Nixon</td>
-            <td>System Architect</td>
-            <td>Edinburgh</td>
-            <td>61</td>
-            <td>2011-04-25</td>
-            <td>
-                    <a href="#" class="btn btn-primary btn-sm" role="button"><i class="fa-solid fa-pencil"></i></i></a>
-                    <a href="#" class="btn btn-danger btn-sm" role="button"><i class="fa-solid fa-trash-can"></i></a>
+                    <a href="#"
+                    data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-custom-class="custom-tooltip"
+                    data-bs-title="Actualizar orden de pedido.." 
+                    class="btn btn-primary btn-sm" role="button"><i class="fa-solid fa-pencil"></i>Editar</i></a>
+                    <a href="#" 
+                    data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-custom-class="custom-tooltip"
+                    data-bs-title="Eliminar orden de pedido..." 
+                    class="btn btn-danger btn-sm" role="button">Eliminar</a>
             </td>
         </tr>
     </tbody>

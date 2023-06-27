@@ -17,7 +17,12 @@
         </div>
         <!-- Button Ventana modal -->
         <div class="col-sm-4 mb-4">
-            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-magnifying-glass"></i>  Buscar</button>
+            <a href="{{url_for('cliente')}}"
+            data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Buscar datos del cliente..." 
+            type="button" class="btn btn-outline-success">
+            <i class="fa-solid fa-magnifying-glass"></i> Buscar</a>
         </div>
         <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -32,14 +37,12 @@
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-primary">Guardar</button> 
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Salir</button>
-        
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Salir </button>
         </div>
       </div>
     </div>
   </div>
-
-        <div class="col-md-6">
+          <div class="col-md-6">
             <label for="form-control">Nombres</label>
             <input type="text" class="form-control" id="cedula" placeholder="Ej. Jonh ">
         </div>
