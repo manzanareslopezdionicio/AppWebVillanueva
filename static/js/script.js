@@ -2,6 +2,15 @@
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
+//Personalizar la ventaja 
+//$(document).ready(function(){
+//  $("#clienteModal").click(function(){
+//    $("#modal_custom").find(".modal-header").css("background","linear-gradient(to left, #f5af19, #f12711");
+//    $("#modal_custom").find("modal-header").css("color", "write");
+//    $("#modal_custom").find("modal-title").text("Registro de Clientes"):
+//    $("#modal_custom").modal('show');
+//  });
+//});
 
 $(document).ready(function () {
     $('#example').DataTable({
@@ -269,3 +278,5 @@ $(document).ready(function () {
     }, false)
   })
 })()
+
+
