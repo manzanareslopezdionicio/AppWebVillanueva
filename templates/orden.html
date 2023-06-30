@@ -47,11 +47,11 @@
       </div>
     </div>
   </div>
-          <div class="col-md-6">
+          <div class="col-md-6 mb-4">
             <label for="form-control" class="form-label">Nombres</label>
             <input type="text" class="form-control" id="cedula" required>
             <div class="valid-feedback">
-                todo bien
+                
             </div>
             <div class="invalid-feedback">
                 Es necesario escribir el nombre
@@ -97,7 +97,11 @@
               </div>   
         </div>
         <div class="col-sm-4 mb-4">
-            <button type="" class="btn btn-success"><i class="fa-solid fa-file-pen"></i> AGREGAR...</button>
+            <button type="" 
+            data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Agregar a la lista de orden" 
+            class="btn btn-success"><i class="fa-solid fa-file-pen"></i> AGREGAR...</button>
         </div>
         <div class="col-md-4">
             <label for="form-label">Nombre producto</label>
@@ -110,7 +114,11 @@
             </div>
         </div>
         <div class="col-md-2">
-            <button type="" class="btn btn-outline-success"><i class="fa-solid fa-magnifying-glass"></i> Buscar</button>
+            <button type="" 
+            data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Buscar datos del producto a ordenar..." 
+            class="btn btn-outline-success"><i class="fa-solid fa-magnifying-glass"></i> Buscar</button>
         </div>
         <div class="col-auto">
             <label for="form-label">Cantidad</label>
