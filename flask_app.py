@@ -36,4 +36,4 @@ def datatables():
 
 
 if __name__ == '__main__':
-    app.run(debug=false, host="0.0.0.0" port=4000)
+    app.run(debug=True, port=4000)
