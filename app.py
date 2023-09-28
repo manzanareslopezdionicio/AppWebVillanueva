@@ -4,7 +4,7 @@ from flask import render_template
 app = Flask(__name__)
 @app.route('/')
 def home():
-    return render_template('indevx.html')
+    return render_template('index.html')
 
 """@app.route('/login')
 def login():
@@ -34,6 +34,8 @@ def producto():
 def datatables():
     return render_template('datatables.html')
 
+#if __name__ == '__main__':
+ #   app.run(debug=True, port=4000)
 
 if __name__ == '__main__':
-    app.run(debug=false, host="0.0.0.0" port=4000)
+    app.run(debug=False, host="0.0.0.0")
