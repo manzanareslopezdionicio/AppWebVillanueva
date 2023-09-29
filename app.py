@@ -1,12 +1,16 @@
 from flask import Flask, redirect, url_for
 from flask import render_template
+import database as dbase
+from config import Config
 
 app = Flask(__name__)
+
+#Rutas de la aplicacion
 @app.route('/')
 def home():
-    return render_template('index.html')
-
-"""@app.route('/login')
+    return render_template('login.html')
+"""
+@app.route('/login')
 def login():
     return render_template('login.html')
 """
