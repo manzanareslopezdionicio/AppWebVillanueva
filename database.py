@@ -1,4 +1,4 @@
-from pymongo import MongoClient
+'''from pymongo import MongoClient
 import certifi
 
 MONGO_URI = 'mongodb+srv://manzanaresdionicio:arleys1234@cluster0.2tfkn8g.mongodb.net/?retryWrites=true&w=majority'
@@ -10,4 +10,4 @@ def dbConnection():
         db=client=["villanueva"]
     except ConnectionError:
         print("Error de conexión con la BDD")
-    return db
+    return db'''

@@ -38,8 +38,8 @@ def producto():
 def datatables():
     return render_template('datatables.html')
 
-"""if __name__ == '__main__':
-   app.run(debug=True, port=4000)
-"""
 if __name__ == '__main__':
-    app.run(debug=False, host="0.0.0.0")
+   app.run(debug=True, port=4000)
+'''
+if __name__ == '__main__':
+    app.run(debug=False, host="0.0.0.0")'''
